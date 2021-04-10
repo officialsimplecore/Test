@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version v2.4.3-dd9870075f-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT3S" type="static" mediaPresentationDuration="PT162.46665954589844S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="audio" subsegmentAlignment="true">
+      <Representation id="0" bandwidth="143837" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>3a0073f3-88d4-488f-af3c-b9359fb6ca43_audio.mp4</BaseURL>
+        <SegmentBase indexRange="789-1480" timescale="48000" presentationTimeOffset="9792">
+          <Initialization range="0-788"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="video" maxWidth="1920" maxHeight="1080" frameRate="15360/512" par="16:9">
+      <Representation id="1" bandwidth="231715" codecs="avc1.64001f" mimeType="video/mp4" sar="640:639" width="852" height="480">
+        <BaseURL>h264_Hd480_3a0073f3-88d4-488f-af3c-b9359fb6ca43.mp4</BaseURL>
+        <SegmentBase indexRange="890-1161" timescale="15360">
+          <Initialization range="0-889"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="2" bandwidth="355544" codecs="avc1.64001f" mimeType="video/mp4" sar="1:1" width="1280" height="720">
+        <BaseURL>h264_Hd720_3a0073f3-88d4-488f-af3c-b9359fb6ca43.mp4</BaseURL>
+        <SegmentBase indexRange="868-1139" timescale="15360">
+          <Initialization range="0-867"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="3" bandwidth="505926" codecs="avc1.640028" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
+        <BaseURL>h264_Hd1080_3a0073f3-88d4-488f-af3c-b9359fb6ca43.mp4</BaseURL>
+        <SegmentBase indexRange="870-1177" timescale="15360">
+          <Initialization range="0-869"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
